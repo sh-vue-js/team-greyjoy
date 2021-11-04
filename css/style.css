@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0392BF;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-image: url('/img/skate1.png');
+}
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #fff;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  #logo {
+      width: 70px;
+      cursor: pointer;
+  }
+  .navbar{
+    margin-top: 20px;
+  }
+.navbar-nav {
+    margin-left: 50px;
+}
+  .fa-shopping-cart{
+    color: #fff;
+    font-size: 20px;
+  }
+
+  
