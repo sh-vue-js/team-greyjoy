@@ -1,4 +1,8 @@
-*{
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -36,5 +40,81 @@ body {
     color: #fff;
     font-size: 20px;
   }
+  .text_after_title, .link{
+    color: rgb(223, 217, 217);
+  }
 
-  
+  .colour_switch{
+    width: 30px;
+    height: 30px;
+    margin-right: 13px;
+  }
+
+  .active-color{
+    border: 2px solid white;
+  }
+  .base{
+    background-color: #0392BF;
+  }
+
+  .pink{
+    background-color: #ED48BA;
+  }
+
+  .yellow{
+    background-color: #FBEC06;
+  }
+
+  .gray{
+    background-color: #B3D4E0;
+  }
+
+  .image{
+    width: auto;
+        height: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        padding: 100px 200px 200px 200px;
+        /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
+        max-width: 100%;
+        max-height: 100%;
+        overflow: auto;
+  }
+
+  .text-1{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 60%;
+    left: 22%;
+  }
+  .text-2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 66%;
+    left: 26%;
+  }
+
+  .checked {
+    color: orange;
+  }
+  .color{
+    margin-right: 50px;
+  }
+  .size-select{
+    width: 160px;
+    background-color: #0392BF;
+  }
+  .form-control{
+    background-color: transparent !important;
+    color: white;
+    border-radius: 0 !important;
+  }
+  .button{
+    background-color: #ED48BA;
+    padding: 10px 25px 10px 25px;
+  }
