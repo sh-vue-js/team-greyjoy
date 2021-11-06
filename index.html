@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -23,149 +23,157 @@
 
 <body>
 
-  <div class="sidenav d-flex flex-column justify-content-between py-3">
-    <a href="http://hey.com"><img src="/img/logo.png" alt="" id="logo"></a>
-    <div id="social icons">
-      <div class="d-flex flex-column align-items-center justify-content-between" style="height: 100px;">
-        <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
-          <path
-            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
-        </svg>
+  <div style="height: 98vh !important; margin: 0px !important;padding-top: 0px !important;" id="baseElement" :class="mainone">
+    <div class="sidenav d-flex flex-column justify-content-between">
+      <a href="http://hey.com"><img src="/img/logo.png" alt="" id="logo"></a>
+      <div id="social icons">
+        <div class="d-flex flex-column align-items-center justify-content-between" style="height: 100px;">
+          <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="24px" height="24px">
+            <path
+              d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z" />
+          </svg>
 
-        <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-          <path
-            d="M17,3H7C4.791,3,3,4.791,3,7v10c0,2.209,1.791,4,4,4h10c2.209,0,4-1.791,4-4V7C21,4.791,19.209,3,17,3z M17.05,9.514 c0,0.086,0,0.171,0,0.343c0,3.257-2.486,7.029-7.029,7.029c-1.371,0-2.657-0.429-3.771-1.114c0.171,0,0.429,0,0.6,0 c1.114,0,2.229-0.429,3.086-1.029c-1.114,0-1.971-0.771-2.314-1.714c0.171,0,0.343,0.086,0.429,0.086c0.257,0,0.429,0,0.686-0.086 c-1.114-0.257-1.971-1.2-1.971-2.4c0.343,0.171,0.686,0.257,1.114,0.343c-0.686-0.6-1.114-1.286-1.114-2.143 c0-0.429,0.086-0.857,0.343-1.2c1.2,1.457,3,2.486,5.057,2.571c0-0.171-0.086-0.343-0.086-0.6c0-1.371,1.114-2.486,2.486-2.486 c0.686,0,1.371,0.257,1.8,0.771c0.6-0.086,1.114-0.343,1.543-0.6c-0.171,0.6-0.6,1.029-1.114,1.371 c0.514-0.086,0.943-0.171,1.457-0.429C17.907,8.743,17.479,9.171,17.05,9.514z" />
-        </svg>
+          <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M17,3H7C4.791,3,3,4.791,3,7v10c0,2.209,1.791,4,4,4h10c2.209,0,4-1.791,4-4V7C21,4.791,19.209,3,17,3z M17.05,9.514 c0,0.086,0,0.171,0,0.343c0,3.257-2.486,7.029-7.029,7.029c-1.371,0-2.657-0.429-3.771-1.114c0.171,0,0.429,0,0.6,0 c1.114,0,2.229-0.429,3.086-1.029c-1.114,0-1.971-0.771-2.314-1.714c0.171,0,0.343,0.086,0.429,0.086c0.257,0,0.429,0,0.686-0.086 c-1.114-0.257-1.971-1.2-1.971-2.4c0.343,0.171,0.686,0.257,1.114,0.343c-0.686-0.6-1.114-1.286-1.114-2.143 c0-0.429,0.086-0.857,0.343-1.2c1.2,1.457,3,2.486,5.057,2.571c0-0.171-0.086-0.343-0.086-0.6c0-1.371,1.114-2.486,2.486-2.486 c0.686,0,1.371,0.257,1.8,0.771c0.6-0.086,1.114-0.343,1.543-0.6c-0.171,0.6-0.6,1.029-1.114,1.371 c0.514-0.086,0.943-0.171,1.457-0.429C17.907,8.743,17.479,9.171,17.05,9.514z" />
+          </svg>
 
-        <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-          <path
-            d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.6,5,2.5,9.3,6.9,10.7v-2.3c0,0-0.4,0.1-0.9,0.1c-1.4,0-2-1.2-2.1-1.9 c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1c0.4,0,0.7-0.1,0.9-0.2 c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6c0,0,1.4,0,2.8,1.3 C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3 c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v3.3c4.1-1.3,7-5.1,7-9.5C22,6.1,16.9,1.4,10.9,2.1z" />
-        </svg>
-      </div>
-
-    </div>
-  </div>
-  <div id="main" class="pe-2 pe-lg-3 w-100">
-    <nav class="navbar navbar-expand-md navbar-dark bg-inverse">
-      <div class="container">
-        <a class="navbar-brand" href="#"><img class="d-block d-md-none p-2" src="/img/logo.png" alt="" id="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-          <div class="d-flex cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </div>
+          <svg fill="#0392BF" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+            <path
+              d="M10.9,2.1c-4.6,0.5-8.3,4.2-8.8,8.7c-0.6,5,2.5,9.3,6.9,10.7v-2.3c0,0-0.4,0.1-0.9,0.1c-1.4,0-2-1.2-2.1-1.9 c-0.1-0.4-0.3-0.7-0.6-1C5.1,16.3,5,16.3,5,16.2C5,16,5.3,16,5.4,16c0.6,0,1.1,0.7,1.3,1c0.5,0.8,1.1,1,1.4,1c0.4,0,0.7-0.1,0.9-0.2 c0.1-0.7,0.4-1.4,1-1.8c-2.3-0.5-4-1.8-4-4c0-1.1,0.5-2.2,1.2-3C7.1,8.8,7,8.3,7,7.6C7,7.2,7,6.6,7.3,6c0,0,1.4,0,2.8,1.3 C10.6,7.1,11.3,7,12,7s1.4,0.1,2,0.3C15.3,6,16.8,6,16.8,6C17,6.6,17,7.2,17,7.6c0,0.8-0.1,1.2-0.2,1.4c0.7,0.8,1.2,1.8,1.2,3 c0,2.2-1.7,3.5-4,4c0.6,0.5,1,1.4,1,2.3v3.3c4.1-1.3,7-5.1,7-9.5C22,6.1,16.9,1.4,10.9,2.1z" />
+          </svg>
         </div>
-      </div>
-    </nav>
 
-    <div class="">
-      <div class="row">
-        <div class="col-md-6 pb-5 mt-4 mb-md-0">
-          <div class="d-flex justify-content-center align-items-center h-100 position-relative">
-            <img class="image" src="img/skate.png" alt="" srcset="">
-            <h1 class="text-1">SPEEDY</h1>
-            <h1 class="text-2">QUADS</h1>
-          </div>
-        </div>
-        <div class="col-md-6 pb-4 px-3 px-sm-4">
-          <div class="row">
-            <div class="col-md-8 mt-4">
-              <h3>SPEEDY QUADS ROLLS</h3>
-            </div>
-            <div class="col-md-4 mt-4">
-              <div class="align-middle mt-1">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-              </div>
-            </div>
-          </div>
-          <p class="text_after_title">Article 800-595-00</p>
-          <h4>3500 Rub.</h4>
-          <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio voluptatum, aliquid a
-            nemo
-            earum dolores sapiente aperiam error. Dicta modi qui impedit iste at nisi deleniti nulla eaque
-            recusandae!Lom
-            ipsum dolor sit amet consectetur adipisicing elit. Atque optio voluptatum, aliquid a nemo earum dolores
-            sapiente aperiam</p>
-          <a href="http://google" class="link mb-3">More details</a>
-
-          <div class="row mt-5">
-            <div class="col-md-3">
-              <h4 class="color">COLOUR:</h4>
-            </div>
-            <div class="col-md-9">
-              <div class="d-flex flex-wrap ml-2">
-                <div>
-                  <div class="rounded-circle colour_switch base active-color"></div>
-                </div>
-                <div>
-                  <div class="rounded-circle colour_switch pink"></div>
-                </div>
-                <div>
-                  <div class="rounded-circle colour_switch yellow"></div>
-                </div>
-                <div>
-                  <div class="rounded-circle colour_switch gray"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-4">
-            <div class="col-md-3">
-              <h4 class="color">SIZE:</h4>
-            </div>
-            <div class="col-md-9">
-
-              <div class="d-flex">
-                <!-- <div class="p-2"> -->
-                <div class="form-group size-select">
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Select</option>
-                  </select>
-                  <!-- </div> -->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button type="submit" class="btn mt-5 btn-primary button">Add to Basket</button>
-        </div>
       </div>
     </div>
+    <div id="main" class="pe-2 pe-lg-3 w-100">
+      <nav class="navbar navbar-expand-md navbar-dark bg-inverse">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="d-block d-md-none p-2" src="/img/logo.png" alt="" id="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a :class="navLink" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a :class="navLink" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a :class="navLink" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex cart">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="">
+        <div class="row">
+          <div class="col-md-6 pb-5 mt-4 mb-md-0">
+            <div class="d-flex justify-content-center align-items-center h-100 position-relative">
+              <img class="image" src="img/skate.png" alt="" srcset="">
+              <h1 class="text-1">SPEEDY</h1>
+              <h1 class="text-2">QUADS</h1>
+            </div>
+          </div>
+          <div class="col-md-6 pb-4 px-3 px-sm-4">
+            <div class="row">
+              <div class="col-md-8 mt-4">
+                <h3>SPEEDY QUADS ROLLS</h3>
+              </div>
+              <div class="col-md-4 mt-4">
+                <div class="align-middle mt-1">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                </div>
+              </div>
+            </div>
+            <p class="text_after_title" :class="text_link">Article 800-595-00</p>
+            <h4>3500 Rub.</h4>
+            <p class="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque optio voluptatum, aliquid a
+              nemo
+              earum dolores sapiente aperiam error. Dicta modi qui impedit iste at nisi deleniti nulla eaque
+              recusandae!Lom
+              ipsum dolor sit amet consectetur adipisicing elit. Atque optio voluptatum, aliquid a nemo earum dolores
+              sapiente aperiam</p>
+            <a href="http://google" class="link mb-3" :class="text_link">More details</a>
+
+            <div class="row mt-5">
+              <div class="col-md-3">
+                <h4 class="color">COLOUR:</h4>
+              </div>
+              <div class="col-md-9">
+                <div class="d-flex flex-wrap ml-2">
+                  <div>
+                    <div class="rounded-circle colour_switch base" :class="defaultActiveColor"
+                      v-on:click="changeBackgroundColor('base')"></div>
+                  </div>
+                  <div>
+                    <div class="rounded-circle colour_switch pink" :class="pinkActiveColor"
+                      v-on:click="changeBackgroundColor('pink')"></div>
+                  </div>
+                  <div>
+                    <div class="rounded-circle colour_switch yellow" :class="yellowActiveColor"
+                      v-on:click="changeBackgroundColor('yellow')"></div>
+                  </div>
+                  <div>
+                    <div class="rounded-circle colour_switch gray" :class="grayActiveColor"
+                      v-on:click="changeBackgroundColor('gray')"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4">
+              <div class="col-md-3">
+                <h4 class="color">SIZE:</h4>
+              </div>
+              <div class="col-md-9">
+
+                <div class="d-flex">
+                  <!-- <div class="p-2"> -->
+                  <div class="form-group size-select">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Select</option>
+                    </select>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn mt-5 btn-primary button">Add to Basket</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
 
-
+  <script src="js/vue.js"></script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
