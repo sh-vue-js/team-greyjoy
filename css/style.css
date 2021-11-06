@@ -12,19 +12,20 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position-x: center;
-    background-image: url('/img/skate1.png');
+    overflow-x: hidden;
+    /* background-image: url('/img/skate1.png'); */
 }
 .sidenav {
     height: 100%;
-    width: 100px;
+    width: 0px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: #b4d4e2;
     overflow-x: hidden;
-    padding-top: 20px;
+    /* padding-top: 20px; */
   }
   #logo {
       width: 70px;
@@ -33,9 +34,9 @@ body {
   .navbar{
     margin-top: 20px;
   }
-.navbar-nav {
+/* .navbar-nav {
     margin-left: 50px;
-}
+} */
   .fa-shopping-cart{
     color: #fff;
     font-size: 20px;
@@ -48,10 +49,11 @@ body {
     width: 30px;
     height: 30px;
     margin-right: 13px;
+    cursor: pointer;
   }
 
   .active-color{
-    border: 2px solid white;
+    border: 3px solid white;
   }
   .base{
     background-color: #0392BF;
@@ -70,14 +72,15 @@ body {
   }
 
   .image{
-    width: auto;
+    width: 350px;
         height: auto;
-        left: 0;
+        /* left: 0;
         right: 0;
         top: 0;
-        bottom: 0;
+        bottom: 0; */
         margin: auto;
-        padding: 100px 200px 200px 200px;
+        /* padding: 100px 200px 200px 200px; */
+        /* decided to use display flex and center the page with a particular width */
         /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
         max-width: 100%;
         max-height: 100%;
@@ -86,16 +89,16 @@ body {
 
   .text-1{
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     position: absolute;
-    top: 60%;
+    bottom: 9%;
     left: 22%;
   }
   .text-2{
-    color: white;
-    font-size: 50px;
+    color:white;
+    font-size: 60px;
     position: absolute;
-    top: 66%;
+    bottom: -4%;
     left: 26%;
   }
 
@@ -117,4 +120,72 @@ body {
   .button{
     background-color: #ED48BA;
     padding: 10px 25px 10px 25px;
+    box-shadow: none;
+    border: none;
   }
+  .button:hover{
+    background-color: #ED48BA;
+  }
+  .button:focus{
+    background-color: #ED48BA;
+  }
+
+#main{
+  padding-left: 1rem;
+}
+
+.icon-color{
+  color: #0392BF;
+}
+
+ /* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow-x: hidden;
+    /* padding-top: 20px; */
+  }
+  #main{
+    padding-left: 100px;
+  }
+
+  .text-1{
+    color: white;
+    position: absolute;
+    bottom: 24%;
+    left: 22%;
+  }
+  .text-2{
+    color: white;
+    position: absolute;
+    bottom: 14%;
+    left: 26%;
+  }
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ }
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
